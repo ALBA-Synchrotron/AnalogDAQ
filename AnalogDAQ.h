@@ -409,13 +409,13 @@ public :
   *	@return	Ok
  *	@exception DevFailed
  */
-	virtual Tango::DevBoolean	import_file(Tango::DevString) = 0;
+	virtual Tango::DevBoolean	import_file() = 0;
 /**
  * Exports to the file described by the FileName attribute
  *	@return	Ok
  *	@exception DevFailed
  */
-	virtual Tango::DevBoolean	export_file(Tango::DevString) = 0;
+	virtual Tango::DevBoolean	export_file() = 0;
 
 //@}
 

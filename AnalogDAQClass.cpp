@@ -90,10 +90,7 @@ CORBA::Any *ExportFileCmd::execute(Tango::DeviceImpl *device,const CORBA::Any &i
 
 	cout2 << "ExportFileCmd::execute(): arrived" << endl;
 
-	Tango::DevString	argin;
-	extract(in_any, argin);
-
-	return insert((static_cast<AnalogDAQ *>(device))->export_file(argin));
+	return insert((static_cast<AnalogDAQ *>(device))->export_file());
 }
 
 //+----------------------------------------------------------------------------
@@ -114,10 +111,7 @@ CORBA::Any *ImportFileCmd::execute(Tango::DeviceImpl *device,const CORBA::Any &i
 
 	cout2 << "ImportFileCmd::execute(): arrived" << endl;
 
-	Tango::DevString	argin;
-	extract(in_any, argin);
-
-	return insert((static_cast<AnalogDAQ *>(device))->import_file(argin));
+	return insert((static_cast<AnalogDAQ *>(device))->import_file());
 }
 
 //+----------------------------------------------------------------------------
