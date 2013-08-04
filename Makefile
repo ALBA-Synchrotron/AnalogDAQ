@@ -114,7 +114,7 @@ make_obj_dir:
 
 install: all
     #copying headers
-	cp AnalogDAQ.h AnalogDAQclass.h $(prefix) 
+	cp AnalogDAQ.h AnalogDAQClass.h $(prefix) 
 #----------------------------------------------------
 #	Tag the CVS module corresponding to this class
 #----------------------------------------------------
