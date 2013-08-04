@@ -112,6 +112,9 @@ clean:
 make_obj_dir:
 	@mkdir -p obj
 
+install: all
+    #copying headers
+	cp AnalogDAQ.h AnalogDAQclass.h $(prefix) 
 #----------------------------------------------------
 #	Tag the CVS module corresponding to this class
 #----------------------------------------------------
