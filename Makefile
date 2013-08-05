@@ -113,8 +113,13 @@ make_obj_dir:
 	@mkdir -p obj
 
 install: all
+    #creating installation directory structure
+	@mkdir -p $(prefix)/include
+	@mkdir -p $(prefix)/obj
     #copying headers
-	cp AnalogDAQ.h AnalogDAQClass.h $(prefix) 
+	cp AnalogDAQ.h AnalogDAQClass.h $(prefix)/include
+    #copying object files
+	cp obj/AnalogDAQClass.o obj/AnalogDAQStateMachine.o $(prefix)/obj
 #----------------------------------------------------
 #	Tag the CVS module corresponding to this class
 #----------------------------------------------------
